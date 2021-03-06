@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+    {% block content %}
+      <div class='bg-dark'>
+        <div id='content'>
+          <center>
+          <br>
+          {% load crispy_forms_tags %}
+          <span class=''>
+            <div class='jumbotron bg-light text-secondary'>
+              {% csrf_token %}
+              <span class='border border-success'>
+                {% if success %}<h1>{{ success }}</h1>{% endif %}
+                {% if category %}<h3>{{ category }} Prayer Saved</h3>{% endif %}
+              </span>
+              <br><br>
+            </div>
+          </span>
+          </center>
+          </div>
+        </div>
+        <br>
+  {% endblock %}

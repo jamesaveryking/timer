@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+    {% block content %}
+      <div class='bg-dark'>
+        <div id='content'>
+          <br>
+          <center>
+          <div class='jumbotron bg-light text-primary'>
+            {% load crispy_forms_tags %}
+            <div id='inputForm'>
+              <form method='post' class='input-form'>
+                {{ form|crispy }}
+                {% csrf_token %}
+                <br>
+                <input type='submit' value='Save Prayer Request' class='btn btn-outline-success'>
+              </form>
+            </div>
+          </div>
+          </center>
+          </div>
+          <br>
+      </div>
+    {% endblock %}

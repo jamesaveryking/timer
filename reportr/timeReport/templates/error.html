@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+    {% block content %}
+      <div class='bg-dark'>
+        <div id='content'>
+          <br>
+          <center>
+          {% load crispy_forms_tags %}
+            <div class='jumbotron bg-light text-primary'>
+              {% csrf_token %}
+              <div class='row'>
+                    <div class="col-xs-auto col-xs-auto">
+                      {% if error %}<h3>{{ error }}</h3>{% endif %}
+                    </div>
+                    <br><br>
+              </div>
+            </div>
+          </center>
+          </div>
+          <br>
+      </div>
+    {% endblock %}

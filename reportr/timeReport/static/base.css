@@ -1,0 +1,12 @@
+nav{
+  background-image: url("/static/WG.jpg");
+  background-size: 100% auto;
+  background-position: center top;
+  display: inline-block !important;
+  width: 100%;
+}
+
+textarea{
+  border-radius: 25px !important;
+  text-align: center;
+}
