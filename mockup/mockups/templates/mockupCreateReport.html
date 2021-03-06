@@ -1,0 +1,219 @@
+
+{% extends 'base.html' %}
+    {% block content %}
+
+    <div class="jumbotron">
+      <h1 class="display-4">Generate Report</h1>
+      <p class="lead">This page aggregates individual timers to where you can view them, edit them, or download an aggregation of them in a report</p>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Initiated Date</th>
+          <th scope="col">Label</th>
+          <th scope="col">Start Time</th>
+          <th scope="col">End Time</th>
+          <th scope="col">Total Time</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Report</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--
+        {% if pastTimers %}
+          {% for pastRequest in pastRequests %}
+          <tr>
+            <th scope="row">{{ pastRequest.r_initiated }}</th>
+            <td><span class="badge badge-dark">{{ pastRequest.r_category }}</span></td>
+            <td><span class="badge badge-info">{{ pastRequest.r_description }}</span></td>
+            <td><span class="badge badge-primary">{{ pastRequest.r_intention }}</span></td>
+            <td><span class="badge badge-dark">{{ pastRequest.r_verses }}</span></td>
+            <td><span class="badge badge-success">{{ pastRequest.r_answered }}</span></td>
+            <td><a href='' class="badge badge-light">Edit</a></td>
+          </tr>
+          {% endfor %}
+        {% endif %}
+        -->
+          <tr>
+            <th scope="row">03-07-2021</th>
+            <td><span class="badge badge-success">CBD-Distillation-Process-A</span></td>
+            <td><span class="badge badge-primary">0818</span></td>
+            <td><span class="badge badge-danger">1753</span></td>
+            <td><span class="badge badge-success">9 H 35 M</span></td>
+            <form action="#">
+            <td><input type='submit' value='Edit' class='btn- btn-outline-info'></td>
+            <td>
+              <div class="form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              </div>
+            </td>
+            </form>
+          </tr>
+          <tr>
+            <th scope="row">03-07-2021</th>
+            <td><span class="badge badge-success">CBD-Distillation-Process-B</span></td>
+            <td><span class="badge badge-primary">0928</span></td>
+            <td><span class="badge badge-danger">1953</span></td>
+            <td><span class="badge badge-success">10 H 25 M</span></td>
+            <form action="#">
+            <td><input type='submit' value='Edit' class='btn- btn-outline-info'></td>
+            <td>
+              <div class="form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              </div>
+            </td>
+            </form>
+          </tr>
+          <tr>
+            <th scope="row">03-05-2021</th>
+            <td><span class="badge badge-success">CBD-Distillation-Process-C</span></td>
+            <td><span class="badge badge-primary">0818</span></td>
+            <td><span class="badge badge-danger">1753</span></td>
+            <td><span class="badge badge-success">2 D 9 H 35 M</span></td>
+            <form action="#">
+            <td><input type='submit' value='Edit' class='btn- btn-outline-info'></td>
+            <td>
+              <div class="form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              </div>
+            </td>
+            </form>
+          </tr>
+          <tr>
+            <th scope="row">03-05-2021</th>
+            <td><span class="badge badge-success">CBD-Distillation-Process-D</span></td>
+            <td><span class="badge badge-primary">0818</span></td>
+            <td><span class="badge badge-danger">1753</span></td>
+            <td><span class="badge badge-success">2 D 9 H 35 M</span></td>
+            <form action="#">
+            <td><input type='submit' value='Edit' class='btn- btn-outline-info'></td>
+            <td>
+              <div class="form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              </div>
+            </td>
+            </form>
+          </tr>
+          <tr>
+            <th scope="row">03-05-2021</th>
+            <td><span class="badge badge-success">CBD-Distillation-Process-E</span></td>
+            <td><span class="badge badge-primary">0818</span></td>
+            <td><span class="badge badge-danger">1753</span></td>
+            <td><span class="badge badge-success">2 D 9 H 35 M</span></td>
+            <form action="#">
+            <td><input type='submit' value='Edit' class='btn- btn-outline-info'></td>
+            <td>
+              <div class="form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              </div>
+            </td>
+            </form>
+          </tr>
+          <tr>
+            <th scope="row">03-05-2021</th>
+            <td><span class="badge badge-success">CBD-Distillation-Process-F</span></td>
+            <td><span class="badge badge-primary">0818</span></td>
+            <td><span class="badge badge-danger">1753</span></td>
+            <td><span class="badge badge-success">2 D 9 H 35 M</span></td>
+            <form action="#">
+            <td><input type='submit' value='Edit' class='btn- btn-outline-info'></td>
+            <td>
+              <div class="form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              </div>
+            </td>
+            </form>
+          </tr>
+          <tr>
+            <th scope="row">03-05-2021</th>
+            <td><span class="badge badge-success">CBD-Distillation-Process-G</span></td>
+            <td><span class="badge badge-primary">0818</span></td>
+            <td><span class="badge badge-danger">1753</span></td>
+            <td><span class="badge badge-success">2 D 9 H 35 M</span></td>
+            <form action="#">
+            <td><input type='submit' value='Edit' class='btn- btn-outline-info'></td>
+            <td>
+              <div class="form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              </div>
+            </td>
+            </form>
+          </tr>
+          <tr>
+            <th scope="row">03-05-2021</th>
+            <td><span class="badge badge-success">CBD-Distillation-Process-H</span></td>
+            <td><span class="badge badge-primary">0818</span></td>
+            <td><span class="badge badge-danger">1753</span></td>
+            <td><span class="badge badge-success">2 D 9 H 35 M</span></td>
+            <form action="#">
+            <td><input type='submit' value='Edit' class='btn- btn-outline-info'></td>
+            <td>
+              <div class="form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              </div>
+            </td>
+            </form>
+          </tr>
+      </tbody>
+    </table>
+
+    <div class="jumbotron">
+      <center>
+      <input type='submit' value='Download Checked Timers as Report' class='btn- btn-outline-success'>
+      </center>
+    </div>
+
+
+      <div class='bg-secondary'>
+        <div id='content'>
+          <br>
+          <center>
+          <div class='jumbotron bg-light'>
+          {% if pastRequests %}
+            {% for pastRequest in pastRequests %}
+            <div class='jumbotron bg-primary text-light'>
+              Internal Prayer ID: {{ pastRequest.user.first_name }} {{ pastRequest.user.last_name }}
+              <div class='row'>
+                <div class="col-xs-auto col-xs-auto">
+                  Date: {{ pastRequest.r_initiated }}
+                </div>
+                <div class="col-xs-auto col-xs-auto">
+                  Request: {{ pastRequest.r_description }}
+                </div>
+              </div>
+              <div class='row'>
+                <div class="col-xs-auto col-xs-auto">
+                  Intention: {{ pastRequest.r_intention }}
+                </div>
+                <div class="col-xs-auto col-xs-auto">
+                  Answered: {{ pastRequest.r_answered }}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          {% endif %}
+          </div>
+          </center>
+          </div>
+          <br>
+      </div>
+
+  {% if pastRequests %}
+    {% for pastRequest in pastRequests %}
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Answered: <span class="badge badge-success">{{ pastRequest.r_answered }}</span></h5>
+              <p class="card-text">{{ pastRequest.r_description }}</p>
+              <a href="#" class="btn btn-primary">Edit</a>
+              <a href="#" class="btn btn-secondary">Detail View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+    {% endfor %}
+  {% endif %}
+{% endblock %}
