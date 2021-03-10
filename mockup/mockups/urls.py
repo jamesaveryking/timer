@@ -19,6 +19,6 @@ from . import views
 
 urlpatterns = [
     path('', views.mockup, name='timer'),
-    path('log', views.mockupLog, name='log'),
+    path('report', views.mockupReport, name='report'),
     path('user', views.mockupUser, name='user'),
 ]

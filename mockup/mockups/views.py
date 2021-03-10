@@ -21,7 +21,7 @@ def mockup(request):
         template = loader.get_template("error.html")
         return HttpResponse(template.render(context, request))
 
-def mockupLog(request):
+def mockupReport(request):
     context = {}
     if(request.method == "GET"):
         context["success"] = str(request.method)
